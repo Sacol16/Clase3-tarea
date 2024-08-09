@@ -1,0 +1,73 @@
+.imagen1, .imagen2, .imagen3, .cali, .teo, .preciado{
+    display: none; /* Ocultar por defecto */
+}
+
+@media (max-width: 425px) and (max-height: 824px) {
+    .imagen1, .cali{
+        display: block;
+    }
+    .imagen2, .teo, .preciado, .imagen3{
+        display: none;
+    }
+}
+
+@media (min-width: 768px) and (min-height: 824px) {
+    .imagen2, .teo{
+        display: block;
+    }
+    .imagen3, .cali, .preciado, .imagen1{
+        display: none;
+    }
+}
+
+@media (min-width: 1024px) and (min-height: 824px) {
+    .imagen3, .preciado{
+        display: block;
+    }
+    .imagen1, .cali, .teo, .imagen2{
+        display: none;
+    }
+}
+
+.tittle{
+    background: green;
+    width: 100%;
+    height: 18%;
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    position: fixed;
+    
+    z-index: 3;
+}
+h1{
+    color: white;
+    font-size: 160px;
+    top: -50px;
+    margin-bottom: 0;
+    
+    
+}
+h2{
+    color: silver;
+    font-size: 160px;
+    margin-top: 0;
+}
+h3{
+    color: gold;
+    font-size: 160px;
+    margin-top: 0;
+}
+
+.fondo{
+    background: black;
+    
+}
+.imagen1{
+    padding-top: 100%;
+}
+.imagen2{
+    padding-top: 20%;
+}
+.imagen3{
+    padding-top: 20%;
+}
